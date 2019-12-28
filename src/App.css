@@ -3,8 +3,8 @@
 }
 
 .menu {
-  height: 10vh;
-  line-height: 10vh;
+  height: 3em;
+  line-height: 3em;
   background: #282c34;
   text-align: left;
   display: flexbox;
