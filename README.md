@@ -1,3 +1,11 @@
+# anniesh.github.io
+## Deploy
+Build and deploy to the master branch where the page is located
+
+`npm run deploy`
+
+
+## React Documentation
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
