@@ -3,11 +3,14 @@
 }
 
 .menu {
+  width: 100%;
   height: 3em;
   line-height: 3em;
   background: #282c34;
   text-align: left;
   display: flexbox;
+  position: sticky;
+  top: 0px;
 }
 
 .menu-btn {
