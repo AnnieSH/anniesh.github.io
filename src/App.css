@@ -34,3 +34,8 @@
   height: inherit;
   line-height: inherit;
 }
+
+#content {
+  width: 70%;
+  display: inline-block;
+}

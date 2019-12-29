@@ -15,7 +15,7 @@ function App() {
       <div id='content'>
         <h2>🚧 Under construction 🚧</h2>
 
-        <h1 ref={homeRef} id='home-header'></h1>
+        <div ref={homeRef} id='home-header'></div>
         
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci eu lobortis elementum nibh. Duis at tellus at urna condimentum. Urna et pharetra pharetra massa massa ultricies mi. Pellentesque dignissim enim sit amet. Habitasse platea dictumst quisque sagittis purus sit amet. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Eu scelerisque felis imperdiet proin fermentum. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Auctor urna nunc id cursus metus aliquam eleifend mi in. Semper risus in hendrerit gravida rutrum quisque non tellus. Ut diam quam nulla porttitor massa. Non sodales neque sodales ut. Nisi lacus sed viverra tellus in. Cursus vitae congue mauris rhoncus aenean vel elit. At tellus at urna condimentum mattis pellentesque id. Lacus sed viverra tellus in hac habitasse platea dictumst.
 

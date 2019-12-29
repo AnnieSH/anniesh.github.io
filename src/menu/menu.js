@@ -1,4 +1,4 @@
-import React, { createRef } from 'react';
+import React from 'react';
 
 class Menu extends React.Component {
   render() {
@@ -27,7 +27,7 @@ class Menu extends React.Component {
 
   scrollToRef(ref) {
     return () => {
-      ref.current.scrollIntoView({behavior: 'smooth', block: 'end'})
+      ref.current.scrollIntoView({behavior: 'smooth', block: 'center'})
     };
   }
 }
