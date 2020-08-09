@@ -1,17 +1,19 @@
-import React from 'react';
+import React from 'react'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import GitHubIcon from '@material-ui/icons/GitHub'
 
 class Menu extends React.Component {
   render() {
     return (
       <div class='menu'>
         <span id='left-menu'>
-          <MenuBtn id='home-btn' label='Home' onClick={this.scrollToRef(this.props.homeRef)}/>
+          <MenuBtn id='home-btn' label='Annie Hu' onClick={this.scrollToRef(this.props.homeRef)}/>
           <MenuBtn id='projects-btn' label='Projects' onClick={this.scrollToRef(this.props.projectsRef)}/>
           <MenuBtn id='hobby-btn' label='Hobbies' onClick={this.scrollToRef(this.props.hobbyRef)}/>
         </span>
         <span id='right-menu'>
-          <MenuBtn id='github-btn' label='Github' onClick={this.gotoGithub}/>
-          <MenuBtn id='linkedin-btn' label='LinkedIn' onClick={this.gotoLinkedIn}></MenuBtn>
+          <IconBtn id='github-btn' onClick={this.gotoGithub}><GitHubIcon/></IconBtn>
+          <IconBtn id='linkedin-btn' onClick={this.gotoLinkedIn}><LinkedInIcon/></IconBtn>
         </span>
       </div>
     );
@@ -27,7 +29,7 @@ class Menu extends React.Component {
 
   scrollToRef(ref) {
     return () => {
-      ref.current.scrollIntoView({behavior: 'smooth', block: 'center'})
+      ref.current.scrollIntoView({behavior: 'smooth', block: 'start'})
     };
   }
 }
@@ -38,6 +40,14 @@ function MenuBtn(props) {
       {props.label}
     </span>
   );
+}
+
+function IconBtn(props) {
+  return (
+    <span className='icon-btn' onClick={props.onClick}>
+      {props.children}
+    </span>
+  )
 }
 
 export default Menu;
