@@ -30,7 +30,7 @@ class Home extends React.Component {
         <Section sectionRef={this.props.hobbyRef} title='Hobbies'>
           <div className="projects-section">
             <Typography variant="h4">Photography</Typography>
-            <img className="project-photo" src="_DSC0834-3.jpg" alt="Yaletown-Roundhouse"/>
+            <img className="project-photo" src="DSC0834-3.jpg" alt="Yaletown-Roundhouse"/>
             I shoot on a Sony A6000, taking pictures of the city, nature, and the occasional portrait.
           </div>
           <div className="project-section">
