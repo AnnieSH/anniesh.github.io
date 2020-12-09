@@ -45,28 +45,37 @@
   color: #282c34;
 }
 
+/* .section {
+  height: 100vh;
+} */
+.MuiPaper-root {
+  width: 75%;
+  margin-bottom: 1rem;
+}
+
 .profile-avatar {
   display: block;
-  height: 250px !important;
-  width: 250px !important;
+  height: 300px !important;
+  width: 300px !important;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
   margin-bottom: 1em;
+  
 }
 
-.project-photo {
+/* .project-photo {
   width: 50%;
   text-align: right;
   float: right;
   margin-left: 1em;
   margin-bottom: 1em;
-}
+} */
 
-.projects-section {
+/* .projects-section {
   overflow: auto;
   margin-bottom: 1em;
-}
+} */
 
 #right-menu {
   float: right;
@@ -75,11 +84,14 @@
   line-height: inherit;
 }
 
-#content {
+.MuiTypography-body1 {
   width: 70%;
-  display: inline-block;
 }
 
 #home-btn {
   color: lightblue;
+}
+
+img {
+  width: max-content;
 }

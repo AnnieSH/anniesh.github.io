@@ -10,7 +10,6 @@ function App() {
 
   return (
     <div className="App">
-      <Menu homeRef={homeRef} projectsRef={projectsRef} hobbyRef={hobbyRef}/>
       <Home homeRef={homeRef} projectsRef={projectsRef} hobbyRef={hobbyRef}/>
     </div>
   );

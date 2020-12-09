@@ -7,9 +7,9 @@ class Menu extends React.Component {
     return (
       <div class='menu'>
         <span id='left-menu'>
-          <MenuBtn id='home-btn' label='Annie Hu' onClick={this.scrollToRef(this.props.homeRef)}/>
-          <MenuBtn id='projects-btn' label='Projects' onClick={this.scrollToRef(this.props.projectsRef)}/>
-          <MenuBtn id='hobby-btn' label='Hobbies' onClick={this.scrollToRef(this.props.hobbyRef)}/>
+          <MenuBtn id='home-btn' label='Annie Hu' onClick={this.props.homeScroll}/>
+          <MenuBtn id='projects-btn' label='Projects' onClick={this.props.projectsScroll}/>
+          <MenuBtn id='hobby-btn' label='Hobbies' onClick={this.props.hobbiesScroll}/>
         </span>
         <span id='right-menu'>
           <IconBtn id='github-btn' onClick={this.gotoGithub}><GitHubIcon/></IconBtn>
@@ -25,12 +25,6 @@ class Menu extends React.Component {
 
   gotoGithub() {
     window.open('https://github.com/AnnieSH');
-  }
-
-  scrollToRef(ref) {
-    return () => {
-      ref.current.scrollIntoView({behavior: 'smooth', block: 'start'})
-    };
   }
 }
 
