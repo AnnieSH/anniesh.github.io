@@ -1,13 +1,13 @@
 import React from 'react'
 import Section from './section'
-import { Avatar, Card, CardContent, Typography } from '@material-ui/core'
+import { Card, CardContent, Typography } from '@material-ui/core'
 import { Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import Menu from '../menu/menu';
 
 
 class Home extends React.Component {
   AVATAR_SRC = "https://media-exp1.licdn.com/dms/image/C5603AQFZ3jZm-K6YCw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=WUiBxcadwf8jplZ0osxc1GiFvYtdD5YpCVP6N0i6wvw";
-
+  
   render() {
     return (
       <div>
@@ -26,10 +26,6 @@ class Home extends React.Component {
            style={{alignItems: 'center', flexDirection: 'column', display: 'flex', justifyContent: 'center'}}
            speed={0.3}
            offset={0}>
-            <Avatar 
-              className="profile-avatar"
-              alt="Annie Hu"
-              src={this.AVATAR_SRC}/>
             <Card>
               <CardContent>
               <Typography variant="h1">
@@ -68,7 +64,7 @@ class Home extends React.Component {
             style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}
             offset={1}
             speed={0.3}>
-              
+
             <Card>
               <CardContent>
                 <Typography variant="h4">Personal Website</Typography>
