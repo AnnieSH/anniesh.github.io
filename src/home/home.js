@@ -68,15 +68,30 @@ class Home extends React.Component {
             style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}
             offset={1}
             speed={0.3}>
+              
+            <Card>
+              <CardContent>
+                <Typography variant="h4">Personal Website</Typography>
+                <Typography variant="subtitle1">
+                  Well, you're looking at it! My personal website is written in Javascript, designed by myself, and uses the Material UI and React-Spring libraries. It's currently hosted on Github Pages.
+                </Typography>
+                <Typography variant='subtitle1'>
+                  Source code is in my GitHub under <b>anniesh.github.io</b> in the dev branch.
+                </Typography>
+              </CardContent>
+            </Card>
             <Card>
               <CardContent>
                 <Typography variant="h4">Run Tracker App</Typography>
                 <Typography variant="subtitle1">
                   Run Tracker is an Android app written in Java that records your runs' path, length, speed, and other stats. Turns out - writing software does not encourage you to exercise.
-                  Source code is in my GitHub.
+                </Typography>
+                <Typography variant='subtitle1'>
+                  Source code is in my GitHub under <b>Run-Tracker</b>
                 </Typography>
               </CardContent>
             </Card>
+
           </ParallaxLayer>
 
         </Section>
