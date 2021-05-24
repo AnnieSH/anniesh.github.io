@@ -20,6 +20,7 @@ class Home extends React.Component {
 
         <Section sectionRef={this.props.homeRef}>
           <ParallaxLayer style={{backgroundColor: '#87BCDE'}} offset={0}>
+            <Typography className='section-title' variant='h1'>annie hu</Typography>
           </ParallaxLayer>
           <ParallaxLayer
            style={{alignItems: 'center', flexDirection: 'column', display: 'flex', justifyContent: 'center'}}
@@ -32,13 +33,21 @@ class Home extends React.Component {
             <Card>
               <CardContent>
               <Typography variant="h1">
-              Hello World
-            </Typography>
-            <Typography variant="subtitle1" align='center' gutterBottom>
-              I'm Annie, a software developer specializing in both back-end and front-end development using Java, Scala, or Typescript.
-              I've done internships in a start-up, VFX company, and a videogame company doing, QA automation/testing, small projects, and back-end development.
-              I currently work at Electronics Arts in Vancouver, where I did my final internship, as a back-end software developer.
-            </Typography>
+              Hello World!
+              </Typography>
+
+              <Typography variant="subtitle1" align='center' gutterBottom>
+                Software developer specializing in backend development using Java, Kotlin, and Scala. 
+              </Typography>
+
+              <Typography variant="subtitle1" align='center' gutterBottom>
+                Currently in the videogame industry developing online gameplay services.
+              </Typography>
+
+
+              <Typography variant="subtitle1" align='center' gutterBottom>
+                Based in Silicon Valley north, i.e. Beautiful Vancouver, Canada.
+              </Typography>
               </CardContent>
             </Card>
 
@@ -46,24 +55,26 @@ class Home extends React.Component {
         </Section>
 
         <Section sectionRef={this.props.projectsRef}>
-          <ParallaxLayer offset={1} style={{backgroundColor: '#a3e4d7'}}/>
+          <ParallaxLayer offset={1} style={{backgroundColor: '#a3e4d7'}}>
+            <Typography className='section-title' variant='h1'>projects</Typography>
+          </ParallaxLayer>
           <ParallaxLayer
             offset={1}
             speed={0.8}
             factor={0.45}>
             <img src="runtracker.jpg" alt="Android app to track runs"/>
-          </ParallaxLayer> <ParallaxLayer className='projects-section'
+          </ParallaxLayer> 
+          <ParallaxLayer className='projects-section'
             style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}
             offset={1}
             speed={0.3}>
             <Card>
               <CardContent>
-              <Typography variant="h1">Projects</Typography>
-              <Typography variant="h4">Run Tracker App</Typography>
-              <Typography variant="subtitle1">
-                Run Tracker is an Android app written in Java that records your runs' path, length, speed, and other stats. Turns out - writing software does not encourage you to exercise.
-                Source code is in my GitHub.
-            </Typography>
+                <Typography variant="h4">Run Tracker App</Typography>
+                <Typography variant="subtitle1">
+                  Run Tracker is an Android app written in Java that records your runs' path, length, speed, and other stats. Turns out - writing software does not encourage you to exercise.
+                  Source code is in my GitHub.
+                </Typography>
               </CardContent>
             </Card>
           </ParallaxLayer>
@@ -73,7 +84,9 @@ class Home extends React.Component {
         <Section sectionRef={this.props.hobbyRef}>
           <ParallaxLayer 
             offset={2} 
-            style={{backgroundColor: '#f1948a'}}/>
+            style={{backgroundColor: '#f1948a'}}>
+            <Typography className='section-title' variant='h1'>hobbies</Typography>
+          </ParallaxLayer>
 
           <ParallaxLayer 
             style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}
@@ -82,6 +95,9 @@ class Home extends React.Component {
             <Card>
               <CardContent>
                 <img className="project-photo" src="DSC0834-3.jpg" alt="Yaletown-Roundhouse - Vancouver"/>
+                <Typography variant="subtitle1">
+                  Yaletown-Roundhouse
+                </Typography>
               </CardContent>
             </Card>
           </ParallaxLayer>
@@ -95,7 +111,11 @@ class Home extends React.Component {
               <CardContent>
                 <Typography variant="h4">Photography</Typography>
                 <Typography variant="subtitle1">
-                  I shoot on a Sony A6000, taking pictures of the city, nature, and the occasional portrait.
+                  I shoot on a Sony A6000, capturing the city, landscapes, and the occasional portrait.
+                </Typography>
+
+                <Typography variant="subtitle1">
+                  Find more of my work at <a href="https://www.instagram.com/swyolag/">@swyolag</a>
                 </Typography>
               </CardContent>
             </Card>
@@ -105,7 +125,9 @@ class Home extends React.Component {
 
           <ParallaxLayer
             offset={3}
-            style={{backgroundColor: '#ccd1d1'}}/>
+            style={{backgroundColor: '#ccd1d1'}}>
+            <Typography className='section-title' variant='h1'>hobbies</Typography>
+          </ParallaxLayer>
        
           <ParallaxLayer
             style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}
@@ -114,6 +136,9 @@ class Home extends React.Component {
             <Card>
               <CardContent>
                 <img className="project-photo" src="pokeball_02.jpg" alt="Pokeball"/>
+                <Typography variant="subtitle1">
+                  Poké Ball
+                </Typography>
               </CardContent>
             </Card>
           </ParallaxLayer>
@@ -126,7 +151,7 @@ class Home extends React.Component {
               <CardContent>
                 <Typography variant="h4">3D Modeling</Typography>
                 <Typography variant="subtitle1">
-                  I am currently learning Blender: a great open-source 3D modeling software. 
+                  I am currently learning 3D creation with the great open-source application Blender
                 </Typography>
               </CardContent>
             </Card>

@@ -1,6 +1,7 @@
 import React from 'react'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub'
+import { Typography } from '@material-ui/core';
 
 class Menu extends React.Component {
   render() {
@@ -31,7 +32,7 @@ class Menu extends React.Component {
 function MenuBtn(props) {
   return (
     <span className='menu-btn' id={props.id} onClick={props.onClick}>
-      {props.label}
+      <Typography variant='button'>{props.label}</Typography>
     </span>
   );
 }
