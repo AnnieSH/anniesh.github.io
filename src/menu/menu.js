@@ -21,7 +21,7 @@ class Menu extends React.Component {
   };
 
   gotoLinkedIn() {
-    window.open('https://www.linkedin.com/in/annie-hu-81755ba0');
+    window.open('https://www.linkedin.com/in/anniehu-swe/');
   }
 
   gotoGithub() {
